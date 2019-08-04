@@ -17,7 +17,7 @@
     <form action="request" method="POST">
         <div class="container">
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <input type="text" id="fname" name="firstname" placeholder="Your first name..">
         
             <label for="lname">Last Name</label>
             <input type="text" id="lname" name="lastname" placeholder="Your last name..">
@@ -31,30 +31,8 @@
         
             <label for="deal">Deal Amount (Yrs/Full Amount)</label>
             <textarea id="deal" name="deal" placeholder="Amount.." style="height:200px"></textarea>
-
-            <input type="url" id="video-url" name="link"/>
-            <button type="button" id="photo">Choose an URL</button>
         
             <input type="submit" value="Submit">
-
-            <!-- <script type="script/javascript">
-                const realFileBtn = document.getElementById("real-file");
-                const photoBtn = document.getElementById("photo");
-                const notiftytxt = document.getElementById("notify");
-
-                photoBtn.addEventListener("Click", function() {
-                    realFileBtn.click();
-                });
-
-                realFileBtn.addEventListener("change", function(){
-                    if (realFileBtn.value){
-                        notiftytxt.innerHTML = realFileBtn.value.match( /[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
-                    }
-                    else {
-                        notiftytxt.innerHTML = "No file chosen, yet"
-                    }
-                })
-            </script> -->
         </div>
     </form>
 </body>

@@ -21,7 +21,6 @@ create table request(
     firstName text not null,
     lastName text not null,
     deal text not null,
-    link text not null,
     status text not null
 );
 
