@@ -8,7 +8,7 @@ public interface PlayerDao{
     boolean checkPlayer(String u, String p);
     String get_pic(String u, String p);
     int get_id(String f, String l);
-    void submit_request(String f, String l, String d);
+    void submit_request(String f, String l, String d, String h);
     void update_age(int i,String u);
     void update_first(String f, String u);
     void update_last(String l, String u);

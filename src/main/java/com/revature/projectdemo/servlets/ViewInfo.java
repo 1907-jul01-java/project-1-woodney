@@ -12,17 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 
-@WebServlet("/request")
-public class Request extends HttpServlet {
+@WebServlet("/view")
+public class ViewInfo extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession(false);
-        String f = req.getParameter("firstname");
-        String l = req.getParameter("lastname");
-        String d = req.getParameter("deal");
-        String h = req.getParameter("highlight");
-        ConnectionUtil connectionUtil = new ConnectionUtil();
-        Players curPlayer = new Players(connectionUtil.getConnection());
-        curPlayer.submit_request(f, l, d, h);
         resp.sendRedirect("submitted.html");
     }
 }

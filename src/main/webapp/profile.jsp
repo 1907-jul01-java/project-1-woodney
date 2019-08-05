@@ -19,6 +19,7 @@ img.avatar {
 </head>
 <body>
         <h2 align = 'center'>Player's Account</h2> 
+        <h3 align = 'center'>Welcome ${first} ${last}</h3>
     <%
         if(session.getAttribute("username")==null)
         {
@@ -31,8 +32,6 @@ img.avatar {
 
     %>
 
-   
-    Welcome ${player}
 
     
     <!--Step 1 : Adding HTML-->
@@ -56,6 +55,11 @@ img.avatar {
     <form action="update.html">
         <div class="container"> 
             <button type="submit">Edit Information</button>
+        </div> 
+    </form>
+    <form action="view" method="POST">
+        <div class="container"> 
+            <a href="view.jsp">View Player's Information</a>
         </div> 
     </form>
 </body>

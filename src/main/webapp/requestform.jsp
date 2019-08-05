@@ -30,7 +30,11 @@
             </select>
         
             <label for="deal">Deal Amount (Yrs/Full Amount)</label>
-            <textarea id="deal" name="deal" placeholder="Amount.." style="height:200px"></textarea>
+            <input type="text" id="deal" name="deal" placeholder="Amount..">
+
+            <label for="highlight">Enter highlight video</label>
+            <textarea id="highlight" name="highlight" placeholder="Highlight.." style="height:200px"></textarea>
+            
         
             <input type="submit" value="Submit">
         </div>

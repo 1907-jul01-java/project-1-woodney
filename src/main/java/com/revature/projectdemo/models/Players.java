@@ -102,13 +102,14 @@ import com.revature.projectdemo.util.*;
         return id;
     }
 
-    public void submit_request(String f, String l, String d){
+    public void submit_request(String f, String l, String d, String h){
         try{
-        PreparedStatement pst = connection.prepareStatement("insert into request(firstName, lastName, deal, status) values (?,?,?,?)");
+        PreparedStatement pst = connection.prepareStatement("insert into request(firstName, lastName, deal, highlight, status) values (?,?,?,?,?)");
             pst.setString(1, f);
             pst.setString(2, l);
             pst.setString(3, d);
-            pst.setString(4, "Pending");
+            pst.setString(4, h);
+            pst.setString(5, "Pending");
             pst.executeUpdate();
 
         } catch (SQLException e) {

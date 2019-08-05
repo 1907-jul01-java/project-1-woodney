@@ -21,7 +21,7 @@ public class DenyRequest extends HttpServlet {
         ConnectionUtil connectionUtil = new ConnectionUtil();
         GeneralManager gm = new GeneralManager(connectionUtil.getConnection());
         gm.deny_request(f, l);
-        resp.sendRedirect("submitted.html");
+        resp.sendRedirect("gmSubmitted.html");
     }
 }
 

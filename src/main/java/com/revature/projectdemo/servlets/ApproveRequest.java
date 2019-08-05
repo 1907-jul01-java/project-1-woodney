@@ -21,7 +21,7 @@ public class ApproveRequest extends HttpServlet {
         ConnectionUtil connectionUtil = new ConnectionUtil();
         GeneralManager gm = new GeneralManager(connectionUtil.getConnection());
         gm.approve_request(f, l);
-        resp.sendRedirect("submitted.html");
+        resp.sendRedirect("gmSubmitted.html");
     }
 }
 

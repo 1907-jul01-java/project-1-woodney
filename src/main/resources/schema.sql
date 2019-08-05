@@ -21,6 +21,7 @@ create table request(
     firstName text not null,
     lastName text not null,
     deal text not null,
+    highlight text,
     status text not null
 );
 
@@ -35,6 +36,8 @@ insert into players(firstName,lastName,username,user_password,age) values ('Dema
 insert into players(firstName,lastName,username,user_password,age) values ('Jimmy', 'Butler', 'JimmyBuckets', 'Houston', 29);
 insert into players(firstName,lastName,username,user_password,age) values ('D-Angelo', 'Russell', 'DLO31', 'Snitch', 23);
 insert into players(firstName,lastName,username,user_password,age) values ('Julius', 'Randle', 'Juju30', 'Ithadtobeyou', 24);
+insert into players(firstName,lastName,username,user_password,age) values ('Cream', 'Biggums', 'Spice', 'Adams', 34);
+
 
 
 

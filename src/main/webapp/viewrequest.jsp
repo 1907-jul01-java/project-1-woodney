@@ -18,6 +18,7 @@
     <th>First Name</th>
     <th>Last Name</th>
     <th>Requested Deal</th>
+    <th>Highlights</th>
     <th>Status</th>
   </tr>
   <%
@@ -39,6 +40,7 @@ while(rs.next())
   <td><%=rs.getString("firstName") %></td>
   <td><%=rs.getString("lastName") %></td>
   <td><%=rs.getString("deal") %></td>
+  <td><%=rs.getString("highlight") %></td>
   <td><%=rs.getString("status") %></td>
 </tr>
     <%
